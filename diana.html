@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Lora|Playfair+Display:400,700"
+          rel="stylesheet">
+    <link href="tribute.css" rel="stylesheet">
+    <title>Tribute to Diana</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<div class="wrapper">
+    <header class="Head">
+        <div class="Hero">
+            <div class="titel">
+                <h1>DIANA, PRINCESS OF WALES</h1>
+                <p class="OnderTXT">THE PEOPLES' PRINCESS</p>
+                <div class="line"></div>
+                <div class="date">
+                    <p>1961 - 1997</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <br><br>
+    <div class="fade-in-image">
+    <img src="https://images.ctfassets.net/9l3tjzgyn9gr/photo-226903/c4b8e8f1eff9926ea79b22d3d6d7becd/226903-in-memory-of-diana-princess-of-wales-who-was-killed-in-an.jpg?fm=jpg&fl=progressive&q=50&w=1200"
+         class="image1"></div>
+
+    <section class="Binnen">
+        <article class="TXT">
+            <h2>About</h2>
+            <div class="DeTxt" style="margin-top: 20px;">
+                <p>The late Diana, Princess of Wales was born The Honourable Diana Frances Spencer on 1 July 1961 in
+                    Norfolk. She received the style Lady Diana
+                    Spencer in 1975, when her father inherited his Earldom.</p>
+
+                <p>Lady Diana Spencer married The Prince of Wales at St Paul's Cathedral in London on 29 July 1981.</p>
+
+                <p>During her marriage the Princess undertook a wide range of royal duties. Family was very important to
+                    the Princess, who had two sons: Prince
+                    William and Prince Henry (Harry). After her divorce from The Prince of Wales, the Princess continued
+                    to be regarded as a member of the Royal
+                    Family.</p>
+
+                <p>Diana, Princess of Wales, died on Sunday, 31 August 1997, following a car crash in Paris.</p>
+
+                <p>There was widespread public mourning at the death of this popular figure, culminating with her
+                    funeral at Westminster Abbey on Saturday, 6
+                    September 1997.</p>
+
+                <p>Even after her death, the Princess's work lives on in the form of commemorative charities and
+                    projects set up to help those in need.</p>
+
+                <section class="Binnen">
+                    <article class="TXT">
+                        <h2>Charity Work Timeline</h2>
+                        <div class="DeTxt" style="margin-top: 40px;">
+                            <p>Princess Diana’s social work and humanitarian efforts in Britain and overseas earned the
+                                respect and adoration of people all over the world. Her humanitarian legacy is carried
+                                on by her sons, who continue to support the charities that their mother founded or
+                                patroned.</p>
+
+                            <button id="more">Show more...</button>
+                            <button id="less">Show less...</button>
+                            <script>
+                                $(document).ready(function() {
+                                    $('#hiddenText').hide();
+                                    $('#less').hide();
+                                    $("#more").click(function(){
+                                        $('#hiddenText').show();
+                                        $('#more').hide();
+                                        $('#less').show();
+                                        $("#less").click(function(){
+                                            $('#hiddenText').hide();
+                                            $('#less').hide();
+                                            $('#more').show();
+                                        })
+                                    })
+
+                                })
+                            </script>
+
+                            <div id="hiddenText">
+                            <p>The brief timeline shows her charitable efforts in chronological order. Throughout her
+                                life she supported and gave her voice to people struggling with AIDS, leprosy, cancer
+                                and illnesses, and homelessness. Her patronage and involvement with many charities
+                                helped the lives of people all around the world, and found Diana a special place in the
+                                hearts of the public.</p>
+
+                            <p>This timeline of events linked to Diana’s charity work shows the princess’s efforts in
+                                chronological order.</p>
+
+                            <ul>
+                                <li>
+                                    <b>1987: </b> Diana begins her work for charitable causes, opens Landmark Aids
+                                    Centre in London and shakes hand with patient with AIDS.
+                                </li>
+                                <li>
+                                    <b>1990: </b> Diana becomes patron of the Leprosy Mission.
+                                </li>
+                                <li>
+                                    <b>1992: </b> Diana becomes patron to Centrepoint, a charity providing support and
+                                    housing for young people in the UK.
+                                </li>
+                                <li>
+                                    <b>1993: </b> Diana opens Children’s Cancer Unit at Royal Marsden Hospital.
+                                </li>
+                                <li>
+                                    <b>1993: </b> Diana delivers speech on “Women & Children with AIDS” on behalf of the
+                                    National Aids Trust.
+                                </li>
+                                <li>
+                                    <b>1996: </b> Diana represents the Royal Marsden Hospital in fundraiser event which
+                                    raised over £1 million.
+                                </li>
+                                <li>
+                                    <b>1997: </b> Diana tours an Angolan minefield, begins working closely with HALO
+                                    Trust, advocating a worldwide ban on landmines.
+                                </li>
+                                <li>
+                                    <b>1997: </b> Princess Diana memorial fund is founded after her death to continue
+                                    her humanitarian work.
+                                </li>
+                            </ul>
+                            </div>
+
+                            <div class="line"></div>
+
+                            <p class="Psite">For further details..<span class="site"><a
+                                    href="https://www.royal.uk/diana-princess-wales"
+                                    target="_blank"> Click here.</a></span></p>
+                            </p>
+                        </div>
+                    </article>
+                    <br><br>
+
+                    <!--aside- defines some content aside from the content it is placed in. sidebar-->
+                    <aside class="Quote">
+                        <div class="binnenQ">
+                            <blockquote class="INquote">“Everyone of us needs to show how much we care for each other
+                                and, in the process, care for ourselves.”
+                            </blockquote>
+                            <p class="writer"> - Diana</p>
+                        </div>
+                    </aside>
+                </section>
+            </div>
+
+        </article>
+    </section>
+</div>
+</html>
