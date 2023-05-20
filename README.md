@@ -1,7 +1,6 @@
 # Tribute-Page
  
-Create A “Tribute Page” Using HTML,Javascript,CSS and
-jQuery.
+Create A “Tribute Page” Using HTML,Javascript,CSS and jQuery.
 You can make a tribute page of someone you admire in your life.
 ● Make a webpage writing about that person adding his/her image.
 ● On the top of the webpage, add the image and name of the person and
